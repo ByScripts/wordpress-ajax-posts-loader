@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ByScripts Wordpress Ajax Posts Loader\n"
+"POT-Creation-Date: 2013-11-01 19:20+0100\n"
+"PO-Revision-Date: 2013-11-01 19:20+0100\n"
+"Last-Translator: Thierry Goettelmann <byscripts@gmail.com>\n"
+"Language-Team: ByScripts <contact@byscripts.info>\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../byscripts_ajax_posts_loader.php:36
+msgid "Load the next page of posts with AJAX."
+msgstr "Charge la prochaine page d'articles via AJAX"
+
+#: ../byscripts_ajax_posts_loader.php:68
+msgid "Load more news"
+msgstr "Charger plus d'actualités"
+
+#: ../byscripts_ajax_posts_loader.php:69
+msgid "Loading..."
+msgstr "Chargement..."
+
+#: ../byscripts_ajax_posts_loader.php:70
+msgid "No more news to load"
+msgstr "Il n'y a plus d'actualités à charger"
+
+#: ../byscripts_ajax_posts_loader.php:102
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Vous n'avez pas la permission d'accéder à cette page."
+
+#: ../byscripts_ajax_posts_loader.php:109
+msgid "Settings"
+msgstr "Paramètres"
+
+#: ../templates/settings.php:3
+#, php-format
+msgid "%s Settings"
+msgstr "Paramètres de %s"
+
+#: ../templates/settings.php:11
+msgid "Content CSS selector"
+msgstr "Sélecteur CSS du contenu"
+
+#: ../templates/settings.php:15
+msgid "Pagination CSS selector"
+msgstr "Sélecteur CSS de la pagination"
+
+#~ msgid "ByScripts Ajax Load More Posts Settings"
+#~ msgstr "Paramètres de ByScripts Ajax Load More Posts "
