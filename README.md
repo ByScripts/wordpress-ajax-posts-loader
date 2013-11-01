@@ -24,6 +24,7 @@ Installation
 1. Upload the plugin in `/wp-content/plugins directory`.
 2. Activate it through the 'Plugin' menu in Wordpress admin.
 3. Go to `Settings > Ajax Posts Loader` to configure the plugin.
+4. Open you CSS file and add styles to `#byscripts_ajax_posts_loader` element.
 
 License
 -------
