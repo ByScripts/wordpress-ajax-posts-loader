@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ByScripts Wordpress Ajax Posts Loader\n"
-"POT-Creation-Date: 2013-11-02 12:26+0100\n"
-"PO-Revision-Date: 2013-11-02 12:30+0100\n"
+"POT-Creation-Date: 2013-11-02 18:22+0100\n"
+"PO-Revision-Date: 2013-11-02 18:22+0100\n"
 "Last-Translator: Thierry Goettelmann <byscripts@gmail.com>\n"
 "Language-Team: ByScripts <contact@byscripts.info>\n"
 "Language: French\n"
@@ -15,27 +15,27 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../byscripts_ajax_posts_loader.php:50
-msgid "Load the next page of posts with AJAX."
-msgstr "Charge la prochaine page d'articles via AJAX"
-
-#: ../byscripts_ajax_posts_loader.php:82
+#: ../byscripts_ajax_posts_loader.php:79
 msgid "Load more news"
 msgstr "Charger plus d'actualités"
 
-#: ../byscripts_ajax_posts_loader.php:83
+#: ../byscripts_ajax_posts_loader.php:80
 msgid "Loading..."
 msgstr "Chargement..."
 
-#: ../byscripts_ajax_posts_loader.php:84
+#: ../byscripts_ajax_posts_loader.php:81
 msgid "No more news to load"
 msgstr "Il n'y a plus d'actualités à charger"
 
-#: ../byscripts_ajax_posts_loader.php:118
+#: ../byscripts_ajax_posts_loader.php:93
+msgid "Load the next page of posts with AJAX."
+msgstr "Charge la prochaine page d'articles via AJAX"
+
+#: ../byscripts_ajax_posts_loader.php:122
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Vous n'avez pas la permission d'accéder à cette page."
 
-#: ../byscripts_ajax_posts_loader.php:125
+#: ../byscripts_ajax_posts_loader.php:129
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -71,11 +71,11 @@ msgstr ""
 "votre sélecteur de page est dans &lt;div class=\"ma-pagination\"&gt;&lt;/"
 "div&gt;, placez ce paramètre à .ma-pagination"
 
-#: ../templates/settings.php:27
+#: ../templates/settings.php:28
 msgid "Remove link after last result"
 msgstr "Supprimer le lien après le dernier résultat"
 
-#: ../templates/settings.php:30
+#: ../templates/settings.php:29
 msgid ""
 "Whether to remove or not the \"Load more posts\" link if there is no more "
 "results to load."
