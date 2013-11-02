@@ -23,6 +23,7 @@ You will need to configure the plugin to suit your website structure.
 
 Installation
 ------------
+
 1. Upload the plugin in `/wp-content/plugins directory`.
 2. Activate it through the 'Plugin' menu in Wordpress admin.
 3. Go to `Settings > Ajax Posts Loader` to configure the plugin.
@@ -30,9 +31,18 @@ Installation
 
 Changelog
 ---------
-0.3 : Better page link management. Should be compatible with any URL format.
-0.2 : Add option to remove link after the last results
-0.1 : First version
+
+#### v0.3
+
+- Better page link management. Should be compatible with any URL format.
+
+#### v0.2
+
+- Add option to remove link after the last results
+
+#### v0.1
+
+- First version
 
 License
 -------
