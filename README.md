@@ -32,6 +32,11 @@ Installation
 Changelog
 ---------
 
+#### v0.4
+
+- Add some description in admin page
+- Complete French translation
+
 #### v0.3
 
 - Better page link management. Should be compatible with any URL format.

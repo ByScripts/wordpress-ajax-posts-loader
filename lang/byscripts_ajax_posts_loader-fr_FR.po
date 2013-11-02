@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ByScripts Wordpress Ajax Posts Loader\n"
-"POT-Creation-Date: 2013-11-01 19:20+0100\n"
-"PO-Revision-Date: 2013-11-01 19:20+0100\n"
+"POT-Creation-Date: 2013-11-02 12:26+0100\n"
+"PO-Revision-Date: 2013-11-02 12:30+0100\n"
 "Last-Translator: Thierry Goettelmann <byscripts@gmail.com>\n"
 "Language-Team: ByScripts <contact@byscripts.info>\n"
 "Language: French\n"
@@ -15,27 +15,27 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../byscripts_ajax_posts_loader.php:36
+#: ../byscripts_ajax_posts_loader.php:50
 msgid "Load the next page of posts with AJAX."
 msgstr "Charge la prochaine page d'articles via AJAX"
 
-#: ../byscripts_ajax_posts_loader.php:68
+#: ../byscripts_ajax_posts_loader.php:82
 msgid "Load more news"
 msgstr "Charger plus d'actualités"
 
-#: ../byscripts_ajax_posts_loader.php:69
+#: ../byscripts_ajax_posts_loader.php:83
 msgid "Loading..."
 msgstr "Chargement..."
 
-#: ../byscripts_ajax_posts_loader.php:70
+#: ../byscripts_ajax_posts_loader.php:84
 msgid "No more news to load"
 msgstr "Il n'y a plus d'actualités à charger"
 
-#: ../byscripts_ajax_posts_loader.php:102
+#: ../byscripts_ajax_posts_loader.php:118
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Vous n'avez pas la permission d'accéder à cette page."
 
-#: ../byscripts_ajax_posts_loader.php:109
+#: ../byscripts_ajax_posts_loader.php:125
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -48,9 +48,40 @@ msgstr "Paramètres de %s"
 msgid "Content CSS selector"
 msgstr "Sélecteur CSS du contenu"
 
-#: ../templates/settings.php:15
+#: ../templates/settings.php:14
+msgid ""
+"This is the HTML element where your posts are loaded.<br>If your list of "
+"post is in &lt;div id=\"main\"&gt;&lt;/div&gt;, set this parameter to #main"
+msgstr ""
+"C'est l'élément HTML où vos articles sont chargés.<br>Si votre liste "
+"d'articles se trouve dans &lt;div id=\"main\"&gt;&lt;/div&gt;, placez ce "
+"paramètre à #main"
+
+#: ../templates/settings.php:18
 msgid "Pagination CSS selector"
 msgstr "Sélecteur CSS de la pagination"
+
+#: ../templates/settings.php:21
+msgid ""
+"This is the HTML element which contains the site navigation/pagination."
+"<br>If your page selector is in &lt;div class=\"my-pagination\"&gt;&lt;/"
+"div&gt;, set this parameter to .my-pagination"
+msgstr ""
+"C'est l'élément HTML qui contient la navigation/pagination du site.<br>Si "
+"votre sélecteur de page est dans &lt;div class=\"ma-pagination\"&gt;&lt;/"
+"div&gt;, placez ce paramètre à .ma-pagination"
+
+#: ../templates/settings.php:27
+msgid "Remove link after last result"
+msgstr "Supprimer le lien après le dernier résultat"
+
+#: ../templates/settings.php:30
+msgid ""
+"Whether to remove or not the \"Load more posts\" link if there is no more "
+"results to load."
+msgstr ""
+"Supprimer ou non le lien \"Charger plus d'actualités\" s'il ne reste plus de "
+"résultats à charger."
 
 #~ msgid "ByScripts Ajax Load More Posts Settings"
 #~ msgstr "Paramètres de ByScripts Ajax Load More Posts "
