@@ -5,7 +5,7 @@
  * Description: Load the next page of posts with AJAX.
  * Text Domain: byscripts_ajax_posts_loader
  * Domain Path: /lang
- * Version: 0.9
+ * Version: 0.2
  * Author: ByScripts
  * Author URI: http://www.byscripts.info/
  * License: MIT
