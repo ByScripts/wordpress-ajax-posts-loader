@@ -40,17 +40,14 @@ class ByScriptsAjaxPostsLoader
 	public $identifier = 'byscripts_ajax_posts_loader';
 
 	public function __construct() {
-		add_action('template_redirect', array($this, 'init'));
+		add_action('template_redirect', array($this, 'start'));
 		add_action('admin_init', array($this, 'adminInit'));
 		add_action('admin_menu', array($this, 'adminMenu'));
+		add_action('init', array($this, 'loadTextDomain'));
 		add_filter(sprintf('plugin_action_links_%s', plugin_basename(__FILE__)), array($this, 'settingsLink'));
-		load_plugin_textdomain($this->identifier, false, dirname(plugin_basename(__FILE__)) . '/lang/');
-
-		// Small hack to make the string visible in PoEdit (I18n)
-		__('Load the next page of posts with AJAX.');
 	}
 
-	public function init() {
+	public function start() {
 		global $wp_query;
 
 		// Don't load script on singular pages
@@ -70,7 +67,7 @@ class ByScriptsAjaxPostsLoader
 
 		// Next page to load
 		$page_number_next = (get_query_var('paged') > 1) ? get_query_var('paged') + 1 : 2;
-		
+
 		// Add some parameters for the JS.
 		wp_localize_script(
 			$this->identifier,
@@ -87,6 +84,13 @@ class ByScriptsAjaxPostsLoader
 				'remove_link_after_last_result' => get_option($this->prefix('remove_link_after_last_result'), false)
 			)
 		);
+	}
+
+	public function loadTextDomain() {
+		load_plugin_textdomain($this->identifier, false, dirname(plugin_basename(__FILE__)) . '/lang/');
+		
+		// Small hack to make the string visible in PoEdit (I18n)
+		__('Load the next page of posts with AJAX.', $this->identifier);
 	}
 
 	/**
