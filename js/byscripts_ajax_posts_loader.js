@@ -48,11 +48,15 @@ jQuery(document).ready(function($) {
 					// Update the button message.
 					if(page_number_next <= page_number_max) {
 						$('#byscripts_ajax_posts_loader_trigger').text(byscripts_ajax_posts_loader.load_more_str);
+					} else if(byscripts_ajax_posts_loader.remove_link_after_last_result) {
+						$('#byscripts_ajax_posts_loader_trigger').remove();
 					} else {
 						$('#byscripts_ajax_posts_loader_trigger').text(byscripts_ajax_posts_loader.no_more_str);
 					}
 				}
 			);
+		} else if(byscripts_ajax_posts_loader.remove_link_after_last_result) {
+			$('#byscripts_ajax_posts_loader_trigger').remove();
 		}
 
 		return false;

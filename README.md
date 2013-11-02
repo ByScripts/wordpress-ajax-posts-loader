@@ -19,6 +19,8 @@ You will need to configure the plugin to suit your website structure.
 
 * **Pagination CSS selector**: It's the CSS selector of the pagination element which will be removed when the plugin is loaded. (Default: `.pagination`)
 
+* **Remove link after last result**: When checked, the "Load more posts" link will be removed after retrieving the last results. Else its label is replaced with "No more posts to load" (Default: `false`)
+
 Installation
 ------------
 1. Upload the plugin in `/wp-content/plugins directory`.

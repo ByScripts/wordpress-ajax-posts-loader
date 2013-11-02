@@ -83,7 +83,8 @@ class ByScriptsAjaxPostsLoader
 				'loading_str' => __('Loading...', $this->identifier),
 				'no_more_str' => __('No more news to load', $this->identifier),
 				'content_css_selector' => get_option($this->prefix('content_css_selector'), '#content'),
-				'pagination_css_selector' => get_option($this->prefix('pagination_css_selector'), '.pagination')
+				'pagination_css_selector' => get_option($this->prefix('pagination_css_selector'), '.pagination'),
+				'remove_link_after_last_result' => get_option($this->prefix('remove_link_after_last_result'), false)
 			)
 		);
 	}
@@ -105,6 +106,7 @@ class ByScriptsAjaxPostsLoader
 	public function registerSettings() {
 		register_setting($this->prefix('settings'), $this->prefix('content_css_selector'));
 		register_setting($this->prefix('settings'), $this->prefix('pagination_css_selector'));
+		register_setting($this->prefix('settings'), $this->prefix('remove_link_after_last_result'));
 	}
 
 	public function adminMenu() {

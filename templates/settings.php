@@ -15,6 +15,10 @@
 					<th><label for="<?php echo $this->prefix('pagination_css_selector')?>"><?php _e('Pagination CSS selector', $this->identifier) ?></label></th>
 					<td> <input name="<?php echo $this->prefix('pagination_css_selector')?>" id="<?php echo $this->prefix('pagination_css_selector')?>" type="text" value="<?php echo get_option($this->prefix('pagination_css_selector'), '.pagination') ?>" class="regular-text code"></td>
 				</tr>
+				<tr>
+					<th><label for="<?php echo $this->prefix('remove_link_after_last_result')?>"><?php _e('Remove link after last result', $this->identifier) ?></label></th>
+					<td> <input name="<?php echo $this->prefix('remove_link_after_last_result')?>" id="<?php echo $this->prefix('remove_link_after_last_result')?>" type="checkbox" <?php echo get_option($this->prefix('remove_link_after_last_result'), false) ? 'checked="checked"' : '' ?> class="regular-text code"></td>
+				</tr>
 			</tbody>
 		</table>
 		<?php submit_button() ?>
