@@ -28,6 +28,11 @@ Installation
 3. Go to `Settings > Ajax Posts Loader` to configure the plugin.
 4. Open you CSS file and add styles to `#byscripts_ajax_posts_loader` element.
 
+Changelog
+---------
+0.2 : Add option to remove link after the last results
+0.1 : First version
+
 License
 -------
 
