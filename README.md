@@ -32,6 +32,10 @@ Installation
 Changelog
 ---------
 
+#### v0.5
+
+- Fix the plugin to works correctly with qTranslate
+
 #### v0.4
 
 - Add some description in admin page
