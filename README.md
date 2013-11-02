@@ -30,6 +30,7 @@ Installation
 
 Changelog
 ---------
+0.3 : Better page link management. Should be compatible with any URL format.
 0.2 : Add option to remove link after the last results
 0.1 : First version
 

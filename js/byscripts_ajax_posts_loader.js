@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 	var page_number_max = parseInt(byscripts_ajax_posts_loader.page_number_max);
 	
 	// The link of the next page of posts.
-	var next_link = byscripts_ajax_posts_loader.next_link;
+	var page_link_model = byscripts_ajax_posts_loader.page_link_model;
 
 	/**
 	 * Replace the traditional navigation with our own,
@@ -35,11 +35,12 @@ jQuery(document).ready(function($) {
 			// Show that we're working.
 			$(this).text(byscripts_ajax_posts_loader.loading_str);
 
+			var next_link = page_link_model.replace(/9999999999/, page_number_next);
+
 			$('#byscripts_ajax_posts_loader_placeholder_'+ page_number_next).load(next_link + ' .post',
 				function() {
 					// Update page number and next_link.
 					page_number_next++;
-					next_link = next_link.replace(/\/page\/[0-9]?/, '/page/'+ page_number_next);
 					
 					// Add a new placeholder, for when user clicks again.
 					$('#byscripts_ajax_posts_loader_trigger')
@@ -55,8 +56,6 @@ jQuery(document).ready(function($) {
 					}
 				}
 			);
-		} else if(byscripts_ajax_posts_loader.remove_link_after_last_result) {
-			$('#byscripts_ajax_posts_loader_trigger').remove();
 		}
 
 		return false;

@@ -5,7 +5,7 @@
  * Description: Load the next page of posts with AJAX.
  * Text Domain: byscripts_ajax_posts_loader
  * Domain Path: /lang
- * Version: 0.2
+ * Version: 0.3
  * Author: ByScripts
  * Author URI: http://www.byscripts.info/
  * License: MIT
@@ -78,7 +78,7 @@ class ByScriptsAjaxPostsLoader
 			array(
 				'page_number_next' => $page_number_next,
 				'page_number_max' => $page_number_max,
-				'next_link' => next_posts($page_number_max, false),
+				'page_link_model' => get_pagenum_link(9999999999),
 				'load_more_str' => __('Load more news', $this->identifier),
 				'loading_str' => __('Loading...', $this->identifier),
 				'no_more_str' => __('No more news to load', $this->identifier),
