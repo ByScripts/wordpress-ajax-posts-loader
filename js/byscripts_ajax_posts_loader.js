@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 	 * Load new posts when the link is clicked.
 	 */
 	$loaderTrigger.click(function() {
-		var next_link = page_link_model;
+		var next_link = page_link_model.replace(/\d+$/, page_number_next);
 
 		// Are there more posts to load?
 		if(page_number_next <= page_number_max) {
