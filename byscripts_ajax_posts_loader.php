@@ -78,6 +78,7 @@ class ByScriptsAjaxPostsLoader
 				'page_link_model' => get_pagenum_link(9999999999),
 				'load_more_str' => __('Load more news', $this->identifier),
 				'loading_str' => __('Loading...', $this->identifier),
+				'error_str' => __('An error occured. Could not load more posts.', $this->identifier),
 				'no_more_str' => __('No more news to load', $this->identifier),
 				'content_css_selector' => get_option($this->prefix('content_css_selector'), '#content'),
 				'pagination_css_selector' => get_option($this->prefix('pagination_css_selector'), '.pagination'),
